@@ -1,24 +1,48 @@
+/* General Elements/Stylization */
 body {
     font-family: 'Roboto';
 
 }
 
-.section-1 {
-    background-color: #1F2937;
-    color: white;
+a {
+    text-decoration: none;
 }
 
-
-
-.footer {
-    background-color: #1F2937;
-    color: white;
-}
 
 
 /* Headers */
-.header {
+
+.section-1 {
+    background-color: #1F2937;
+    color: white;
+
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Header */
+.header {
+    padding: 15px;
+    display: flex;
+}
+
+.header-links {
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.header-link {
+    color: white;
+}
+
+/* Hero elements under section 1*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
 }
 
 .header-secondary {
@@ -41,14 +65,50 @@ button, .action {
     background-color: #3882F6;
 }
 
+/* Section 2 */
+
+.content-sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.header-sec2 {
+    display: flex;
+    justify-content: center;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+
 /* Quotes */
 
 .section-3 {
     background: #E5E7EB;
     color: #1F2937;
+    display: flex;
+    justify-content: center;
 }
 
 .quote-text {
     font-style: italic;
     font-size: 36px;
+}
+
+/* Call to action segment */
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer elements */
+.footer {
+    background-color: #1F2937;
+    color: white;
 }

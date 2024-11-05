@@ -1,13 +1,17 @@
 /* General Elements/Stylization */
 body {
     font-family: 'Roboto';
-
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
 /* Headers */
@@ -15,15 +19,17 @@ a {
 .section-1 {
     background-color: #1F2937;
     color: white;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 /* Header */
 .header {
-    padding: 15px;
+    padding-bottom: 72px;
+    padding-top: 14px;
     display: flex;
 }
 
@@ -37,6 +43,10 @@ a {
     color: white;
 }
 
+.header-image {
+    border: 0;
+}
+
 /* Hero elements under section 1*/
 
 .hero {
@@ -44,6 +54,7 @@ a {
     justify-content: center;
     gap: 48px;
 }
+
 
 .header-secondary {
     font-size: 18px;
@@ -56,18 +67,25 @@ a {
     color: #F9FAF8;
 }
 
+.header-secondary {
+    padding-bottom: 12px;
+}
+
 .header-logo {
     font-size: 24px;
     color:#F9FAF8;
 }
 
-button, .action {
+button {
     background-color: #3882F6;
+    border: 2px solid white;
+    padding: 6px 24px;
 }
 
 /* Section 2 */
 
 .content-sec2 {
+    padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
@@ -84,6 +102,9 @@ button, .action {
     gap: 24px;
 }
 
+img {
+    border: 4px solid blue;
+}
 
 /* Quotes */
 
@@ -100,17 +121,24 @@ button, .action {
 }
 
 /* Call to action segment */
+.action-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .action {
+    background-color: #3882F6;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 /* Footer elements */
-.footer {
+.footer-container {
     background-color: #1F2937;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .header {

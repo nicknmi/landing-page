@@ -84,16 +84,19 @@ button {
     color: white;
     background-color: #3882F6;
     border: 2px solid white;
+    border-radius: 6px;
     padding: 6px 24px;
 }
 
 /* Section 2 */
 
 .content-sec2 {
+    padding-top: 24px;
     padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: space-around;
+    flex-basis: 1;
 }
 
 .header-sec2 {
@@ -110,6 +113,7 @@ button {
 
 img {
     border: 4px solid blue;
+    border-radius: 6px;
 }
 
 /* Quotes */

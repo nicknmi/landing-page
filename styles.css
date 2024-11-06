@@ -2,6 +2,8 @@
 body {
     font-family: 'Roboto';
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -23,7 +25,7 @@ p {
 .section-1 {
     background-color: #1F2937;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 
     display: flex;
     flex-direction: column;
@@ -38,10 +40,11 @@ p {
     display: flex;
 }
 
-.header-links {
+.header-links.header-secondary {
     padding-bottom: 0;
     margin-left: auto;
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -50,7 +53,11 @@ p {
 }
 
 .header-image {
+    width: 600px;
     border: 0;
+    border-radius: 0;
+    flex-basis: 300px;
+    flex: 0;
 }
 
 .header-button {
@@ -95,18 +102,26 @@ button {
 }
 
 /* Section 2 */
+.section-2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
+    flex-basis: 500px;
+}
 
 .content-sec2 {
     padding-top: 24px;
-    padding-bottom: 72px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
-    flex: 1;
+    align-items: center;
+    flex-grow: 1;
 
 }
 
 .header-sec2 {
+    font-size: 15px;
+    margin-bottom: 24px;
     display: flex;
     justify-content: center;
 }
@@ -114,16 +129,26 @@ button {
 .images-container {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     gap: 24px;
-    flex-basis: 200px;
     flex-wrap: wrap;
 }
 
 
 img {
-    border: 4px solid blue;
-    border-radius: 6px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882F6;
+    border-radius: 8%;
+    flex-shrink: 0;
+}
+
+.image {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Quotes */
@@ -137,18 +162,21 @@ img {
     justify-content: center;
 }
 
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
 .quote-text {
     font-style: italic;
     font-size: 36px;
 }
-
 .quote-person {
-    display: flex;
     align-self: flex-end;
 }
 
 /* Call to action segment */
 .action-container {
+    font-size: small;
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
@@ -163,7 +191,12 @@ img {
 }
 
 h2 {
+    font-weight: 500;
     margin: 0;
+}
+
+.action-p {
+    font-weight: 300;
 }
 
 /* Footer elements */
@@ -173,4 +206,8 @@ h2 {
     padding: 28px;
     display: flex;
     justify-content: center;
+}
+
+.footer {
+    font-size: 12px;
 }
